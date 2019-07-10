@@ -13,3 +13,13 @@ Conversion of coefficients into binary (coeffcients are smaller than 1): decimal
 Implementation details, results and discussions can be find in the following article:
 
 "Efficient Single-Precision Floating-Point Division Using Harmonized Parabolic Synthesis" https://ieeexplore.ieee.org/abstract/document/7987504/
+
+How to compile:
+
+Go into the folder
+
+To run the tests and generate harness: sbt "run --backend c --compile --test --genHarness"
+
+Generating verilog: sbt "run --backend v --genHarness"
+
+Details: https://chisel.eecs.berkeley.edu/2.2.0/getting-started.html
